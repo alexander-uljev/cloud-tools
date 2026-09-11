@@ -1,4 +1,15 @@
-#!/usr/bin/env python3
+"""
+Скрипт читает имя аккаунта и роль, создаёт его и назначает заданную роль, 
+получает ключи и сохраняет их в `.env` с именами `{name}_key_id` и 
+`{name}_secret`.
+
+Для работы необходимы ключи и секрет пользователя с достаточными правами в 
+файле `.env` под ключами  `p_key_id` и `p_secret`.
+
+Examples:
+    python3 create_service_account.py 's3-admin' 's3e.admin'
+"""
+
 import utils
 from create_service_account.argparse import parse_args
 
