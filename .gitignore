@@ -1,0 +1,30 @@
+# Секреты и локальные настройки
+.env
+config.yaml
+*.bak
+
+# VS Code
+.vscode
+
+# Виртуальное окружение
+.venv/
+venv/
+ENV/
+
+# Кэш Python и pytest
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Папки сборки пакета
+dist/
+build/
+*.egg-info/
+
+# Пока не готово
+backup_scripts.py
+check_service_acc.py
+
+# Для дебага
+s3-admin.json
